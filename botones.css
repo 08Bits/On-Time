@@ -2,6 +2,14 @@
 
 /*General*/
 
+/*<a class="boton-naranja boton-centro" href="#"><span class="boton-text-all-color">Texto del boton</span></a>
+
+*En donde dice boton-naranja, se puede cambiar por boton-azul, boton-verde, boton-blanco, boton-naranja, boton-morado, boton-verde-G
+
+*Para el boton-verde-G, este es su codigo HTML:
+
+<a class="boton-verde-G boton-centro" href="#"><span class="boton-text-verde-G">Texto del boton</span></a>*/
+
 .boton-text-all-color {
     display: block;
     font-family: Arial,Helvetica;
