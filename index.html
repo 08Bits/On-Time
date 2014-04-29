@@ -16,6 +16,22 @@
 		<link rel="stylesheet" href="css/estilos.css"/>
 		<link rel="stylesheet" href="css/botones.css"/>
 	</head>
+	<script>
+		function mostrarOcultar() { 
+			if (chk.checked) {
+				txt.style.display="none";
+				br.style.display="none";
+				reg.style.display="none";
+				br2.style.display="none";
+			}
+			else{
+				txt.style.display="";
+				br.style.display="";
+				reg.style.display="";
+				br2.style.display="";
+			};
+		}
+	</script>
 	<body>
 		<section id="contenedor">
 		<nav>
@@ -33,12 +49,15 @@
 			<div class="formgray">
 				<label>Origen: </label><br /><input type="text" name="Origen"><br />
 				<label>Destino: </label><br /><input type="text" name="Destino"><br />
-				<label>Fecha: </label><br /><input type="date" name="Fecha"><br />
+				<label>Viaje sencillo: </label><br /><input type="checkbox" id="chk" onchange="mostrarOcultar();" /><br />
+				<label>Ida: </label><br /><input type="date" name="Fecha"><br />
+				<label id="txt">Regreso: </label><br id="br"/><input type="date" name="Fecha" id="reg"><br id="br2"/>
 				<label>Adultos: </label><br /><input type="number" value="0" name="Adultos" min="0"><br />
 				<label>Menores: </label><br /><input type="number" value="0" name="Menores" min="0"><br /><br />
 				<a class="boton-azul boton-centro" href="#"><span class="boton-text-all-color">
 					Buscar</span></a>
 			</div>
+			<br />
 			</div>
 			
 		<div style="text-align: center">
