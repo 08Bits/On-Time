@@ -1,7 +1,11 @@
 On-Time
 =======
 
-Creación de sistema web para realizar viajes.
+Plataforma web para ofrecer servicios de viajes en línea.
 
-no seas gay mario
-adal y lomely forever <3
+Autores:
+Pedro Cruz
+Mario Negrete
+Oscar Barrera
+Andrés Martínez
+Adalberto López
