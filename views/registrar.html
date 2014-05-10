@@ -15,6 +15,13 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		<link rel="stylesheet" href="../css/estilos.css"/>
 		<link rel="stylesheet" href="../css/botones.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="../css/style.css" media="all" />
+	
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+    	<script type="text/javascript" src="../js/jquery.inputfocus-0.9.min.js"></script>
+    	<script type="text/javascript" src="../js/jquery.main.js"></script>
 	</head>
 	<body>
 		<section id="contenedor">
@@ -28,8 +35,308 @@
 			</ul>
 		</nav>
 
-		<div>
+		<div id="container">
+        	<form action="#" method="post">
+	
+            	<!-- #first_step -->
+            	<div id="first_step">
+                	<h1>Regístrate para descubrir numerosas sorpresas.</h1>
 
+                	<div class="form">
+                		<input type="text" name="email" id="email" value="e-mail"/>
+                    	<label for="email">Proporcione un correo electrónico que será utilizado para el inicio de sesión.</label> 
+                    
+                    	<input type="password" name="password" id="password" value="password" />
+                   	 	<label for="password">Contraseña de por lo menos 4 caracteres. Utilice una mezcla de mayúsculas y minúsculas para una contraseña segura.</label>
+                    
+                    	<input type="password" name="cpassword" id="cpassword" value="password" />
+                    	<label for="cpassword">Si las contraseñas no son iguales, usted no será capaz de continuar con el registro.</label>
+                	</div>      
+                	<div class="clear">
+                	</div>
+                	<input class="submit" type="submit" name="submit_first" id="submit_first" value="" />
+            	</div>      
+            	<div class="clear">
+            	</div>
+
+				<!-- #second_step -->
+           	 	<div id="second_step">
+                	<h1>Regístrate para descubrir numerosas sorpresas.</h1>
+
+                	<div class="form">
+                    	<input type="text" name="firstname" id="firstname" value="Nombre" />
+                    	<label for="firstname">Nombre. </label>
+                    	<input type="text" name="lastname" id="lastname" value="Apellido" />
+                    	<label for="lastname">Apellido Paterno. </label>
+                    	<input type="text" name="mlastnamem" id="mlastname" value="Apellido" />
+                    	<label for="lastname">Apellidos Materno. </label>                  
+                	</div>     
+                	<div class="clear">
+                	</div>
+                	<input class="submit" type="submit" name="submit_second" id="submit_second" value="" />
+            	</div>      
+            	<div class="clear">
+            	</div>
+
+            	<!-- #third_step -->
+            	<div id="third_step">
+                	<h1>Regístrate para descubrir numerosas sorpresas.</h1>
+
+               	 	<div class="form">
+                    	<select id="age" name="age">
+                        	<option> 0 - 17</option>
+                        	<option>18 - 25</option>
+                        	<option>26 - 40</option>
+                        	<option>40+</option>
+                    	</select>
+                    	<label for="age">Edad. </label> 
+                    	<div class="clear">
+                    	</div>
+
+                    	<select id="gender" name="gender">
+                        	<option>Masculino</option>
+                       	 	<option>Femenino</option>
+                    	</select>
+                    	<label for="gender">Sexo. </label> 
+                    	<div class="clear">
+                    	</div>
+                    
+	                    <select id="country" name="country">
+							<option>Afganistán</option>
+							<option>Albania</option>
+							<option>Alemania</option>
+							<option>Andorra</option>
+							<option>Angola</option>
+							<option>Antigua y Barbuda</option>
+							<option>Arabia Saudita</option>
+							<option>Argelia</option>
+							<option>Argentina</option>
+							<option>Armenia</option>
+							<option>Australia</option>
+							<option>Austria</option>
+							<option>Azerbaiyán</option>
+							<option>Bahamas</option>
+							<option>Bangladés</option>
+							<option>Barbados</option>
+							<option>Baréin</option>
+							<option>Bélgica</option>
+							<option>Belice</option>
+							<option>Benín</option>
+							<option>Bielorrusia</option>
+							<option>Birmania</option>
+							<option>Bolivia</option>
+							<option>Bosnia y Herzegovina</option>
+							<option>Botsuana</option>
+							<option>Brasil</option>
+							<option>Brunéi</option>
+							<option>Bulgaria</option>
+							<option>Burkina Faso</option>
+							<option>Burundi</option>
+							<option>Bután</option>
+							<option>Cabo Verde</option>
+							<option>Camboya</option>
+							<option>Camerún</option>
+							<option>Canadá</option>
+							<option>Catar</option>
+							<option>Chad</option>
+							<option>Chile</option>
+							<option>China</option>
+							<option>Chipre</option>
+							<option>Ciudad del Vaticano</option>
+							<option>Colombia</option>
+							<option>Comoras</option>
+							<option>Corea del Norte</option>
+							<option>Corea del Sur</option>
+							<option>Costa de Marfil</option>
+							<option>Costa Rica</option>
+							<option>Croacia</option>
+							<option>Cuba</option>
+							<option>Dinamarca</option>
+							<option>Dominica</option>
+							<option>Ecuador</option>
+							<option>Egipto</option>
+							<option>El Salvador</option>
+							<option>Emiratos Árabes Unidos</option>
+							<option>Eritrea</option>
+							<option>Eslovaquia</option>
+							<option>Eslovenia</option>
+							<option>España</option>
+							<option>Estados Unidos</option>
+							<option>Estonia</option>
+							<option>Etiopía</option>
+							<option>Filipinas</option>
+							<option>Finlandia</option>
+							<option>Fiyi</option>
+							<option>Francia</option>
+							<option>Gabón</option>
+							<option>Gambia</option>
+							<option>Georgia</option>
+							<option>Ghana</option>
+							<option>Granada</option>
+							<option>Grecia</option>
+							<option>Guatemala</option>
+							<option>Guyana</option>
+							<option>Guinea</option>
+							<option>Guinea ecuatorial</option>
+							<option>Guinea-Bisáu</option>
+							<option>Haití</option>
+							<option>Honduras</option>
+							<option>Hungría</option>
+							<option>India</option>
+							<option>Indonesia</option>
+							<option>Irak</option>
+							<option>Irán</option>
+							<option>Irlanda</option>
+							<option>Islandia</option>
+							<option>Islas Marshall</option>
+							<option>Islas Salomón</option>
+							<option>Israel</option>
+							<option>Italia</option>
+							<option>Jamaica</option>
+							<option>Japón</option>
+							<option>Jordania</option>
+							<option>Kazajistán</option>
+							<option>Kenia</option>
+							<option>Kirguistán</option>
+							<option>Kiribati</option>
+							<option>Kuwait</option>
+							<option>Laos</option>
+							<option>Lesoto</option>
+							<option>Letonia</option>
+							<option>Líbano</option>
+							<option>Liberia</option>
+							<option>Libia</option>
+							<option>Liechtenstein</option>
+							<option>Lituania</option>
+							<option>Luxemburgo</option>
+							<option>Madagascar</option>
+							<option>Malasia</option>
+							<option>Malaui</option>
+							<option>Maldivas</option>
+							<option>Malí</option>
+							<option>Malta</option>
+							<option>Marruecos</option>
+							<option>Mauricio</option>
+							<option>Mauritania</option>
+							<option>México</option>
+							<option>Micronesia</option>
+							<option>Moldavia</option>
+							<option>Mónaco</option>
+							<option>Mongolia</option>
+							<option>Montenegro</option>
+							<option>Mozambique</option>
+							<option>Namibia</option>
+							<option>Nauru</option>
+							<option>Nepal</option>
+							<option>Nicaragua</option>
+							<option>Níger</option>
+							<option>Nigeria</option>
+							<option>Noruega</option>
+							<option>Nueva Zelanda</option>
+							<option>Omán</option>
+							<option>Países Bajos</option>
+							<option>Pakistán</option>
+							<option>Palaos</option>
+							<option>Panamá</option>
+							<option>Papúa Nueva Guinea</option>
+							<option>Paraguay</option>
+							<option>Perú</option>
+							<option>Polonia</option>
+							<option>Portugal</option>
+							<option>Reino Unido</option>
+							<option>República Centroafricana</option>
+							<option>República Checa</option>
+							<option>República de Macedonia</option>
+							<option>República del Congo</option>
+							<option>República Democrática del Congo</option>
+							<option>República Dominicana</option>
+							<option>República Sudafricana</option>
+							<option>Ruanda</option>
+							<option>Rumanía</option>
+							<option>Rusia</option>
+							<option>Samoa</option>
+							<option>San Cristóbal y Nieves</option>
+							<option>San Marino</option>
+							<option>San Vicente y las Granadinas</option>
+							<option>Santa Lucía</option>
+							<option>Santo Tomé y Príncipe</option>
+							<option>Senegal</option>
+							<option>Serbia</option>
+							<option>Seychelles</option>
+							<option>Sierra Leona</option>
+							<option>Singapur</option>
+							<option>Siria</option>
+							<option>Somalia</option>
+							<option>Sri Lanka</option>
+							<option>Suazilandia</option>
+							<option>Sudán</option>
+							<option>Sudán del Sur</option>
+							<option>Suecia</option>
+							<option>Suiza</option>
+							<option>Surinam</option>
+							<option>Tailandia</option>
+							<option>Tanzania</option>
+							<option>Tayikistán</option>
+							<option>Timor Oriental</option>
+							<option>Togo</option>
+							<option>Tonga</option>
+							<option>Trinidad y Tobago</option>
+							<option>Túnez</option>
+							<option>Turkmenistán</option>
+							<option>Turquía</option>
+							<option>Tuvalu</option>
+							<option>Ucrania</option>
+							<option>Uganda</option>
+							<option>Uruguay</option>
+							<option>Uzbekistán</option>
+							<option>Vanuatu</option>
+							<option>Venezuela</option>
+							<option>Vietnam</option>
+							<option>Yemen</option>
+							<option>Yibuti</option>
+							<option>Zambia</option>
+							<option>Zimbabue</option>
+                    		</select>
+                    		<label for="country">Pais. </label> 
+                    		<div class="clear">
+                    		</div>
+                    
+                	</div>      
+                	<div class="clear">
+                	</div>
+                	<input class="submit" type="submit" name="submit_third" id="submit_third" value="" />
+            	</div> 
+            	<div class="clear">
+            	</div>
+            
+            
+            	<!-- #fourth_step -->
+            	<div id="fourth_step">
+                	<h1>Regístrate para descubrir numerosas sorpresas.</h1>
+
+               		 <div class="form">
+                    	<h2>Resumen</h2>
+                    
+                    	<table>
+	                        <tr><td>Username</td><td> </td></tr>
+	                        <tr><td>Password</td><td> </td></tr>
+	                        <tr><td>Email</td><td> </td></tr>
+	                        <tr><td>Nombre</td><td> </td></tr>
+	                        <tr><td>Edad</td><td> </td></tr>
+	                        <tr><td>Sexo</td><td> </td></tr>
+	                        <tr><td>País</td><td> </td></tr>
+                    	</table>
+                	</div>     
+                	<div class="clear">
+                	</div>
+                	<input class="send submit" type="submit" name="submit_fourth" id="submit_fourth" value="" />            
+            	</div>
+            	 
+        	</form>
+		</div>
+		<div id="progress_bar">
+        	<div id="progress"> </div>
+        	<div id="progress_text">0% Completado</div>
 		</div>
 
 		<footer>
