@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1"/>
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>OnTime | Mi Perfil - Inicio</title>
+		<meta name="description" content="Inicio de sesión">
+		<meta name="author" content="Pedro Cruz">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="../css/estilos.css"/>
+		<link rel="stylesheet" href="../css/botones.css"/>
+	<style>
+		* {
+  			box-sizing: border-box;
+  			padding: 0;
+  			margin: 0;
+		}
+		/* Icons */
+		/*	@font-face {
+  			font-family: "FontAwesome";
+  			font-style: normal;
+  			font-weight: normal;
+  			src: url("http://wildwebwatch.com/fonts/fontAwesome/fontawesome-webfont.eot") 
+  			format("embedded-opentype"), 
+  			url("http://wildwebwatch.com/fonts/fontAwesome/fontawesome-webfont.woff") 
+  			format("woff"), url("http://wildwebwatch.com/fonts/fontAwesome/fontawesome-webfont.ttf") 
+  			format("truetype"), url("http://wildwebwatch.com/fonts/fontAwesome/fontawesome-webfont.svgz#FontAwesomeRegular")
+  			format("svg"), url("http://wildwebwatch.com/fonts/fontAwesome/fontawesome-webfont.svg#FontAwesomeRegular") 
+  			format("svg");
+		}*/
+		/*.icon-user:before {
+  			content: "\f007";
+		}*/
+		/*.icon-lock:before {
+  			content: "\f023";
+		}*/
+		/*[class^="icon-"], [class*=" icon-"] {
+		  	display: inline;
+		  	width: auto;
+		  	height: auto;
+		 	line-height: inherit;
+		  	vertical-align: baseline;
+		  	background-image: none;
+		  	background-position: 0% 0%;
+		  	background-repeat: repeat;
+		}
+		[class^="icon-"]:before, [class*=" icon-"]:before {
+  			font-family: FontAwesome;
+  			font-weight: normal;
+  			font-style: normal;
+  			display: inline-block;
+  			text-decoration: inherit;
+		}*/
+		/*.icon-large {
+  			position: absolute;
+  			top: 11px;
+  			left: 10px;
+  			color: white;
+		}*/
+		/*.icon-large:before {
+  			vertical-align: top;
+  			font-size: 1.3333333333333333em;
+		}*/
+		/*.icon-lock {
+  			left: 12px;
+		}*/
+		/*body {
+  			background: url("http://wildwebwatch.com/css/../img/background_body.jpg") repeat scroll 0 0 transparent;
+		}*/
+		form {
+  			width: 250px;
+  			margin: 30px auto;
+  			padding: 15px;
+		  	border-radius: 0.3em;
+		  	border: 1px solid rgba(0, 0, 0, 0.6);
+		  	background: #222;
+		  	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3),
+		  	1px 3px 2px rgba(0, 0, 0, 0.3),
+		  	inset 0 -100px 50px rgba(255, 255, 255, 0.1);
+		  	position: relative;
+		}
+		form:after {
+  			content: "";
+  			display: block;
+  			position: absolute;
+  			left: 50%;
+  			width: 15px;
+  			height: 15px;
+  			margin-left: -8px;
+  			background: inherit;
+  			top: -8px;
+  			transform: rotate(45deg);
+  			border-top: 1px solid rgba(0, 0, 0, 0.6);
+  			border-left: 1px solid rgba(0, 0, 0, 0.6);
+  			box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.2);
+		}
+		#input_wrapper {
+			border: 1px solid rgba(0, 0, 0, 0.6);
+			border-radius: 0.3em;
+			box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), 
+			inset 0 -50px 30px rgba(255, 255, 255, 0.1),
+			inset 0 5px 5px rgba(0, 0, 0, 0.3);
+		}
+		p {
+  			position: relative;
+		}
+		label {
+  			color: transparent;
+  			font-size: 1px;
+  			position: absolute;
+  			visibility: hidden;
+		}
+		input[type=text],
+		input[type=password] {
+  			width: 100%;
+  			padding: 10px 10px 10px 35px;
+  			border: 0 none;
+  			background: rgba(0, 0, 0, 0.5);
+  			color: white;
+		}
+		input[type=text]:hover,
+		input[type=password]:hover {
+  			box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+		}				
+		#login {
+  			border-bottom: 1px solid black;
+  			border-radius: 0.3em 0.3em 0 0;
+		}
+		#pass {
+  			border-top: 1px solid rgba(255, 255, 255, 0.1);
+  			border-radius: 0 0 0.3em 0.3em;
+		}
+		input[type=submit] {
+  			display: block;
+  			position: relative;
+  			width: 100%;
+  			padding: 8px;
+  			margin-top: 8px;
+  			text-decoration: none;
+  			text-align: center;
+  			cursor: pointer;
+  			border: 1px solid rgba(0, 0, 0, 0.8);
+  			border-radius: 0.2em;
+  			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5),
+  			inset 0 20px 20px rgba(255, 255, 255, 0.2), 
+  			0 2px 1px rgba(0, 0, 0, 0.2),
+  			0 0 2px 8px rgba(50, 50, 50, 0.1);
+  			transition: all 0.3s ease-out;
+  			font-family: Helvetica, sans-serif;
+  			font-size: 1em;
+  			line-height: 1em;
+  			font-weight: bold;
+  			color: rgba(255, 255, 255, 0.8);
+  			text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3),
+  			0 1px 0 rgba(255, 255, 255, 0.2);
+  			-webkit-font-smoothing: subpixel-antialiased;
+		}
+		input[type=submit]:hover {
+  			box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5),
+  			inset 0 -20px 20px rgba(200, 200, 200, 0.1), 
+  			0 2px 1px rgba(0, 0, 0, 0.2),
+  			0 0 2px 8px rgba(100, 100, 100, 0.1);
+		}
+		input[type=submit]:active {
+  			top: 1px;
+		}	
+		#log-in {
+  			background: #1e83e5;
+		}
+
+		#register {
+  			background: #5f9a2e;
+		}
+	</style>
+	    <script src="../js/prefixfree.min.js"></script>
+		<script src="../js/modernizr.js"></script>
+	</head>
+	<body>
+		<section id="contenedor">
+		<nav>
+			<ul>
+				<li><a href="../index.html"><img src="../images/logo.png"/></a></li>
+				<li><a href="../index.html">Búsqueda</a></li>
+				<li><a href="../views/ofertas.html">Ofertas</a></li>
+				<li><a href="../views/registrar.html">Registrarse</a></li>
+				<li><a href="../views/inises.html">Mi Perfil</a></li>
+			</ul>
+		</nav>
+
+		<div>
+			<form>
+  				<div id="input_wrapper">
+  					<p>
+   			 			<label for="login">Correo</label>
+    					<i class="icon icon-user icon-large">
+    					</i>
+   						 <input type="text" name="login" id="login" placeholder="Correo">
+
+  					</p>
+  					<p>
+    					<label for="pass">Contraseña</label>
+     					<i class="icon icon-lock icon-large">
+     					</i>
+    					<input type="password" name="pass" id="pass" placeholder="Contraseña">
+					</p>
+  				</div>
+  					<p>
+					    <input type="submit" id="log-in" name="log-in" value="Ingresar">
+					    <input type="submit" id="register" name="register" value="Registrarse">
+ 					 </p>
+			</form>
+		</div>
+
+			<footer>
+				<ul>
+					<li><a target="_blank" href="http://www.08bits.com/conoacutecenos.html">Acerca de</a></li>
+					<li><a target="_blank" href="http://www.08bits.com/formulario.html">Contáctanos</a></li>
+					<li><a target="_blank" href="http://www.08bits.com/privacidad.html">Privacidad</a></li>
+					<li><a target="_blank" href="https://www.facebook.com/08Bits">Facebook</a></li>
+					<li><a target="_blank" href="https://twitter.com/08Bits_">Twitter</a></li>
+				</ul>
+				<p style="text-align: center;">
+					&copy; 08Bits.com Todos los derechos reservados. All rights reserved. 2014
+				</p>
+			</footer>
+		</section>
+	</body>
+</html>
