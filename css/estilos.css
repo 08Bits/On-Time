@@ -132,6 +132,35 @@ footer p{
    text-shadow: 0px -1px 0px #334f71;
 }
 
+.formgray3{
+	display:none;
+	background:#ccc;
+	border:2px solid lightgray;
+	border-radius:5px;
+	color: black;
+	font-size:20px;
+	margin: 0 auto;
+	padding:10px;
+	width:700px;
+	text-align: center;
+}
+.formgray3 input{
+	width: 260px; 
+   height: 35px; 
+   padding: 5px 20px 0px 20px; 
+   margin: 0 0 20px 0;
+   border-radius: 5px; 
+   -moz-border-radius: 5px; 
+   -webkit-border-radius: 5px;
+   -moz-box-shadow: 0px 1px 0px #f2f2f2;
+   -webkit-box-shadow: 0px 1px 0px #f2f2f2;
+   font-family: sans-serif; 
+   font-size: 16px; color: #000000;
+   text-transform: uppercase; 
+   text-shadow: 0px -1px 0px #334f71;
+}
+
+
 #contenedor{
 	background:rgba(0, 170, 182, 1);
 	margin:0 auto;
@@ -199,9 +228,13 @@ footer p{
 
 @media screen and (max-width:735px){
 	.formgray2{
+		display: none;
+	}
+	.formgray3{
+		display:block;
 		width:200px;
 	}
-	.formgray2 input{
+	.formgray3 input{
 		width: 130px; 
    		height: 17px; 
 	}
